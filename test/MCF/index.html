@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCF TC</title>
+    <style>
+        .table{
+            width: 100%;
+            padding: 0px;
+            vertical-align: top;
+        }
+
+        .contenteditable {
+            border: 1px solid black;
+            width: 400px;
+        }
+
+        .test_input {
+            width: 400px;
+            height: 30px;
+        }
+
+        textarea {
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <h1>Multi Control Function - HTML Test Cases</h1>
+    </head>
+    
+    <div class="source">
+        <h2>Source for Testing</h2>
+        
+        <table class="table">
+            <tr>
+                <td>
+                    <h3>Plaintext:</h3>
+                        <input type="text" value="This is a plain text" readonly>
+
+                    <h3>URL:</h3>
+                        <a href="www.google.com">Click here to visit Google.com!</a>
+
+                    <h3>HTML:</h3>
+                        <p>
+                            <span style="color:red; font-weight: bold; font-family: 'Times New Roman', Times, serif;">HTML </span>
+                            <span style="color:green; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">Text</span>
+                            <span style="color:blue; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">with</span>
+                            <span style="color:violet; font-weight: bold; font-family:  'Courier New', Courier, monospace;">Formatting</span>
+                        </p>
+                </td><td>
+                    <h3>Image:</h3>
+                        <img src="https://people.math.sc.edu/Burkardt/data/png/lena.png" height="200px" width="200px"><br>
+                </td>
+                <td>
+                    <h3>Image with Alt:</h3>
+                        <img src="https://people.math.sc.edu/Burkardt/data/png/lena.png" alt="lena" height="200px" width="400px"><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="test">
+        <h2>Test Elements</h2>
+            <table class="table">
+                <tr>
+                    <td>
+                        <h3>Input Text Box</h3>
+                            <p>Text Box 1: </p> <input type="text" class="test_input">
+                            <p>Text Box 2: </p> <input type="text" class="test_input">
+                    </td>
+                    <td>
+                        <h3>Input URL Box</h3>
+                            <p>URL Box 1: </p> <input type="url" class="test_input">
+                            <p>URL Box 2: </p> <input type="url" class="test_input">
+                    </td>
+                    <td>
+                        <h3>contenteditable</h3>
+                            <p>contenteditable 1: </p> <div contenteditable="true" class="contenteditable"></div>
+                            <p>contenteditable 2: </p> <div contenteditable="true" class="contenteditable"></div>
+                
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Text Area</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Text Area 1: </p> <textarea></textarea>
+                        </td>
+                        <td>
+                            <p>Text Area 2: </p> <textarea></textarea>
+                        </td>
+                    </tr>
+                </table>
+    </div>
+</body>
+</html>
