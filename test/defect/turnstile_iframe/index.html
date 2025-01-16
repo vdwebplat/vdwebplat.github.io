@@ -1,0 +1,16 @@
+<html><head>
+    <title>Iframe Example</title>
+	<meta http-equiv="Content-Security-Policy" content="frame-src 'self';">
+    <script type="text/javascript">
+        function createIframe() {
+            var iframe = document.createElement('iframe');
+            iframe.src = 'about:blank';
+            document.body.appendChild(iframe);
+        }
+    </script>
+</head>
+<body>
+    <h1>Iframe Example</h1>
+    <button onclick="createIframe()">Create Iframe</button>
+
+</body></html>
