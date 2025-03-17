@@ -1,0 +1,11 @@
+
+
+1. Adding new test category
+- harness/testTypes.js
+    - add entry to window.testSuiteDescriptions 
+    - add entry to window.testSuiteVersions
+        - 'testSuites'
+
+- add test function
+    - Test Function should match testSuiteVersions entry
+
